@@ -1,0 +1,8 @@
+owlready2
+rdflib
+pandas
+neo4j
+sqlalchemy
+pymysql
+tabulate
+neo4j
