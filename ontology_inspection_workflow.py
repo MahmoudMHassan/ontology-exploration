@@ -5,7 +5,7 @@ from neo4j import GraphDatabase
 
 # Step 1: Load the ontology with error handling
 try:
-    onto = owl.get_ontology("file://./digitrubber.owl").load()
+    onto = owl.get_ontology("file://./digitrubber-full.owl").load()
 except Exception as e:
     print(f"Error loading ontology: {e}")
     exit(1)
@@ -57,7 +57,7 @@ def get_overview():
 def query_ontology(sparql_query):
     try:
         g = Graph()
-        g.parse("digitrubber.owl", format="xml")
+        g.parse("digitrubber-full.owl", format="xml")
         results = g.query(sparql_query)
         return pd.DataFrame([(str(r.get('class', '')), str(r.get('label', ''))) for r in results], 
                            columns=['Class', 'Label'])
