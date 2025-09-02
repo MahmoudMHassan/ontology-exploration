@@ -90,5 +90,7 @@ To explore and visualize the ontology on the graph at http://localhost:7474, run
 
 ![demo](https://github.com/user-attachments/assets/aafcca30-9be7-4364-a14e-6cadc7b81a4b)
 
-
-github.com/user-attachments/assets/ff855a0b-6237-4153-b738-ad4638fbec1e)
+Next ToDo: 
+- Include Reasoners to infer new facts from SWRL rules and axioms.
+- Use owlready2's SPARQL engine or rdflib more flexibly.
+- .....
